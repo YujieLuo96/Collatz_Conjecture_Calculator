@@ -94,7 +94,7 @@ class CollatzPlotter:
             if current_max > max_sequence_value:
                 max_sequence_value = current_max
                 max_sequence_number = n
-            self.ax.plot(x, y)
+            self.ax.plot(x, y, label=f'n={n}')
 
         self.ax.legend()
         self.canvas.draw()
